@@ -22,13 +22,13 @@
         <div id="logo-div">
             <img src="assets/githubProfilesLogo.png" alt="Project logo." id="logo">
         </div>
-        <div class="container-form">
+        <div class="container-form" id="container-form">
             <h1>Github Profiles</h1>
-            <form action="">
+            <div id="form">
                 <label for="username">Your Github user:</label>
-                <input type="text" name="username" required>
-                <button type="submit">SEND</button>
-            </form>
+                <input type="text" name="username" id="githubUser" required>
+                <button onclick="changePage()">SEND</button>
+            </div>
             <div class="theme-switcher" title="Toggle theme.">
                 <div id="switcher-border">
                     <div id="switcher-circle"></div>
@@ -36,7 +36,14 @@
                 <i class="fa-solid fa-sun" id="icon-theme"></i>
             </div>
         </div>
+
+        <div id="page2" class="page2">
+            <h1 id="user">kkkk</h1>
+        </div>
+
     </main>
+    <script src="scripts/githubInfos.js"></script>
+    <script src="scripts/getUserInfos.js"></script>
     <script src="scripts/switcher.js"></script>
     <script src="https://kit.fontawesome.com/7d2af71512.js" crossorigin="anonymous"></script>
 </body>
