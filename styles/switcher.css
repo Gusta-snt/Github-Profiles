@@ -1,0 +1,34 @@
+#switcher-border {
+    display: flex;
+    width: 40px;
+    height: 25px;
+    border: 3px solid var(--white);
+    border-radius: 16px;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#switcher-circle {
+    position: relative;
+    left: 3px;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+#switcher-circle.active {
+    left: 16px;
+}
+
+#switcher-border.active{
+    background-color: var(--white);
+}
+
+body.active {
+    --black: #fff;
+    --white: #000;
+    --grey: #333337;
+}
