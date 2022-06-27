@@ -21,13 +21,13 @@ function changePage() {
 
     const url =`https://api.github.com/users/${user}`;
 
-    lblUser.innerHTML = user;
+    lblUser.textContent = user;
 
     fetch(url).then(response => response.json()).then(data => {
         profileImg.src = data.avatar_url;
-        lblName.innerHTML = data.name;
-        lblFolowers.innerHTML = `${data.followers} folowers.`;
-        lblRepos.innerHTML = `${data.public_repos} public repositories.`;
+        lblName.textContent = data.name;
+        lblFolowers.textContent = `${data.followers} folowers.`;
+        lblRepos.textContent = `${data.public_repos} public repositories.`;
     })
 
     fetch(`https://api.github.com/users/${user}/repos`).then(response => response.json()).then(dat => {
@@ -83,19 +83,19 @@ function changePage() {
         }
 
         if (top1 == 0){
-            topRepos1.innerHTML = dat[1].name;
-            topRepos2.innerHTML = dat[2].name;
-            topRepos3.innerHTML = dat[3].name;
-            topRepos4.innerHTML = dat[4].name;
+            topRepos1.textContent = dat[1].name;
+            topRepos2.textContent = dat[2].name;
+            topRepos3.textContent = dat[3].name;
+            topRepos4.textContent = dat[4].name;
             topReposLink1.href = dat[1].html_url;
             topReposLink2.href = dat[2].html_url;
             topReposLink3.href = dat[3].html_url;
             topReposLink4.href = dat[4].html_url;
         }else {
-            topRepos1.innerHTML = dat[positionTop1].name;
-            topRepos2.innerHTML = dat[positionTop2].name;
-            topRepos3.innerHTML = dat[positionTop3].name;
-            topRepos4.innerHTML = dat[positionTop4].name;
+            topRepos1.textContent = dat[positionTop1].name;
+            topRepos2.textContent = dat[positionTop2].name;
+            topRepos3.textContent = dat[positionTop3].name;
+            topRepos4.textContent = dat[positionTop4].name;
             topReposLink1.href = dat[positionTop1].html_url;
             topReposLink2.href = dat[positionTop2].html_url;
             topReposLink3.href = dat[positionTop3].html_url;
