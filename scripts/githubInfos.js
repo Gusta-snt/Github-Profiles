@@ -39,7 +39,7 @@ function changePage() {
     fetch(`https://api.github.com/users/${user}/repos`).then(response => response.json()).then(dat => {
         if(dat.message === "Not Found"){
             githubUser.style.border = "3px solid red";
-            alert("User not found");
+            
         }else {
     
             var top1 = 0; 
