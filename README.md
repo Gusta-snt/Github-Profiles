@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://i.ibb.co/Qkzh9sw/github-Profiles-Logo.png" alt="Github Profiles Logo" style="width:150px;">
+    <a href="https://github-profiles-gustasnt.vercel.app/"><img src="https://i.ibb.co/Qkzh9sw/github-Profiles-Logo.png" alt="Github Profiles Logo" style="width:150px;"></a>
     <h1>Github Profiles</h1>
     <p>Write your github username and see your informations!</p>
     <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">
@@ -15,12 +15,18 @@
         <img src="https://img.shields.io/static/v1?label=Canva&message=V2.0&color=2add1a&style=for-the-badge&logo=">
     </a>
    <p>
+        <a href="#go">Go to!</a> • 
         <a href="#idea">Idea</a> • 
         <a href="#license">License</a> • 
         <a href="#technologies">Technologies</a> •
         <a href="#author">Author</a>
   </p>
-  <h3 align="center">🚧  Not finished...  🚧</h3>
+  <h3 align="center">✔️  Finished!  ✔️</h3>
+</div>
+
+<div id="go">
+    <h2>Go to!</h2>
+    <p>If you want to test the website, click on the logo or <a href="https://github-profiles-gustasnt.vercel.app" target="_blank">click here.</a></p>
 </div>
 
 <div id="idea">
